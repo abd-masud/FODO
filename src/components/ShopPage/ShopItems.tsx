@@ -10,10 +10,6 @@ import product8 from "../../../public/img/product/8.png";
 import { faStar } from "@fortawesome/free-solid-svg-icons";
 import { faHeart } from "@fortawesome/free-regular-svg-icons";
 import Link from "next/link";
-import React from "react";
-import Slider from "react-slick";
-import "slick-carousel/slick/slick.css";
-import "slick-carousel/slick/slick-theme.css";
 
 import dynamic from "next/dynamic";
 
@@ -25,51 +21,21 @@ const FontAwesomeIcon = dynamic(
   { ssr: false }
 );
 
-export const FeaturedProduct = () => {
-  let settings = {
-    arrows: true,
-    infinite: true,
-    speed: 500,
-    slidesToShow: 4,
-    slidesToScroll: 1,
-    autoplay: true,
-    autoplaySpeed: 3000,
-    marginX: "10px",
-    responsive: [
-      {
-        breakpoint: 768,
-        settings: {
-          arrows: false,
-          centerMode: true,
-          centerPadding: "40px",
-          slidesToShow: 3,
-        },
-      },
-      {
-        breakpoint: 480,
-        settings: {
-          arrows: false,
-          centerMode: true,
-          centerPadding: "40px",
-          slidesToShow: 1,
-        },
-      },
-    ],
-  };
+export const ShopItems = () => {
   return (
-    <div>
-      <div className="max-w-screen-xl mx-auto">
-        <Slider {...settings}>
-          <div className="px-3 over">
+    <div className="bg-[#F2F3F9]">
+      <div className="max-w-screen-xl m-auto grid grid-cols-3 py-24">
+        <div className="col-span-2">
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
             <Link
               className="flex flex-col justify-center items-center m-auto bg-white px-3 py-5 border-[1px] border-gray-250 hover:border-[#7BAE00] transition duration-300 group relative overflow-hidden"
-              href={"/Shop"}
+              href={"/Product-Details"}
             >
               <div className="bg-[#7BAE00] h-10 w-10 rounded-full flex justify-center items-center absolute top-5 right-5">
                 <FontAwesomeIcon className="text-white" icon={faHeart} />
               </div>
               <Image
-                className="scale-100 group-hover:scale-110 rotate-0 group-hover:rotate-3 transition duration-300"
+                className="scale-100 group-hover:scale-110 rotate-0 group-hover:rotate-3 transition duration-300 h-full w-full"
                 src={product1}
                 height={330}
                 width={330}
@@ -93,17 +59,15 @@ export const FeaturedProduct = () => {
                 <s className="text-[14px]">$210</s>
               </p>
             </Link>
-          </div>
-          <div className="px-3">
             <Link
               className="flex flex-col justify-center items-center m-auto bg-white px-3 py-5 border-[1px] border-gray-250 hover:border-[#7BAE00] transition duration-300 group relative overflow-hidden"
-              href={"/Shop"}
+              href={"/Product-Details"}
             >
               <div className="bg-[#7BAE00] h-10 w-10 rounded-full flex justify-center items-center absolute top-5 right-5">
                 <FontAwesomeIcon className="text-white" icon={faHeart} />
               </div>
               <Image
-                className="scale-100 group-hover:scale-110 rotate-0 group-hover:rotate-3 transition duration-300"
+                className="scale-100 group-hover:scale-110 rotate-0 group-hover:rotate-3 transition duration-300 h-full w-full"
                 src={product2}
                 height={330}
                 width={330}
@@ -127,17 +91,15 @@ export const FeaturedProduct = () => {
                 <s className="text-[14px]">$210</s>
               </p>
             </Link>
-          </div>
-          <div className="px-3">
             <Link
               className="flex flex-col justify-center items-center m-auto bg-white px-3 py-5 border-[1px] border-gray-250 hover:border-[#7BAE00] transition duration-300 group relative overflow-hidden"
-              href={"/Shop"}
+              href={"/Product-Details"}
             >
               <div className="bg-[#7BAE00] h-10 w-10 rounded-full flex justify-center items-center absolute top-5 right-5">
                 <FontAwesomeIcon className="text-white" icon={faHeart} />
               </div>
               <Image
-                className="scale-100 group-hover:scale-110 rotate-0 group-hover:rotate-3 transition duration-300"
+                className="scale-100 group-hover:scale-110 rotate-0 group-hover:rotate-3 transition duration-300 h-full w-full"
                 src={product3}
                 height={330}
                 width={330}
@@ -161,17 +123,175 @@ export const FeaturedProduct = () => {
                 <s className="text-[14px]">$210</s>
               </p>
             </Link>
-          </div>
-          <div className="px-3">
             <Link
               className="flex flex-col justify-center items-center m-auto bg-white px-3 py-5 border-[1px] border-gray-250 hover:border-[#7BAE00] transition duration-300 group relative overflow-hidden"
-              href={"/Shop"}
+              href={"/Product-Details"}
             >
               <div className="bg-[#7BAE00] h-10 w-10 rounded-full flex justify-center items-center absolute top-5 right-5">
                 <FontAwesomeIcon className="text-white" icon={faHeart} />
               </div>
               <Image
-                className="scale-100 group-hover:scale-110 rotate-0 group-hover:rotate-3 transition duration-300"
+                className="scale-100 group-hover:scale-110 rotate-0 group-hover:rotate-3 transition duration-300 h-full w-full"
+                src={product4}
+                height={330}
+                width={330}
+                alt=""
+              />
+              <div className="py-3 px-8 bg-white text-black hover:bg-[#7BAE00] hover:text-white transition absolute mt-24 duration-300 opacity-0 group-hover:opacity-100 z-50">
+                <span>Add to Cart</span>
+              </div>
+              <div className="text-[#FFCC00]">
+                <FontAwesomeIcon icon={faStar} />
+                <FontAwesomeIcon icon={faStar} />
+                <FontAwesomeIcon icon={faStar} />
+                <FontAwesomeIcon icon={faStar} />
+                <FontAwesomeIcon icon={faStar} />
+              </div>
+              <p className="my-2">Purnava omega 3 Enri...</p>
+              <p>
+                <span className="text-[#7BAE00] font-bold text-[18px] mr-1">
+                  $200
+                </span>
+                <s className="text-[14px]">$210</s>
+              </p>
+            </Link>
+            <Link
+              className="flex flex-col justify-center items-center m-auto bg-white px-3 py-5 border-[1px] border-gray-250 hover:border-[#7BAE00] transition duration-300 group relative overflow-hidden"
+              href={"/Product-Details"}
+            >
+              <div className="bg-[#7BAE00] h-10 w-10 rounded-full flex justify-center items-center absolute top-5 right-5">
+                <FontAwesomeIcon className="text-white" icon={faHeart} />
+              </div>
+              <Image
+                className="scale-100 group-hover:scale-110 rotate-0 group-hover:rotate-3 transition duration-300 h-full w-full"
+                src={product5}
+                height={330}
+                width={330}
+                alt=""
+              />
+              <div className="py-3 px-8 bg-white text-black hover:bg-[#7BAE00] hover:text-white transition absolute mt-24 duration-300 opacity-0 group-hover:opacity-100 z-50">
+                <span>Add to Cart</span>
+              </div>
+              <div className="text-[#FFCC00]">
+                <FontAwesomeIcon icon={faStar} />
+                <FontAwesomeIcon icon={faStar} />
+                <FontAwesomeIcon icon={faStar} />
+                <FontAwesomeIcon icon={faStar} />
+                <FontAwesomeIcon icon={faStar} />
+              </div>
+              <p className="my-2">Purnava omega 3 Enri...</p>
+              <p>
+                <span className="text-[#7BAE00] font-bold text-[18px] mr-1">
+                  $200
+                </span>
+                <s className="text-[14px]">$210</s>
+              </p>
+            </Link>
+            <Link
+              className="flex flex-col justify-center items-center m-auto bg-white px-3 py-5 border-[1px] border-gray-250 hover:border-[#7BAE00] transition duration-300 group relative overflow-hidden"
+              href={"/Product-Details"}
+            >
+              <div className="bg-[#7BAE00] h-10 w-10 rounded-full flex justify-center items-center absolute top-5 right-5">
+                <FontAwesomeIcon className="text-white" icon={faHeart} />
+              </div>
+              <Image
+                className="scale-100 group-hover:scale-110 rotate-0 group-hover:rotate-3 transition duration-300 h-full w-full"
+                src={product6}
+                height={330}
+                width={330}
+                alt=""
+              />
+              <div className="py-3 px-8 bg-white text-black hover:bg-[#7BAE00] hover:text-white transition absolute mt-24 duration-300 opacity-0 group-hover:opacity-100 z-50">
+                <span>Add to Cart</span>
+              </div>
+              <div className="text-[#FFCC00]">
+                <FontAwesomeIcon icon={faStar} />
+                <FontAwesomeIcon icon={faStar} />
+                <FontAwesomeIcon icon={faStar} />
+                <FontAwesomeIcon icon={faStar} />
+                <FontAwesomeIcon icon={faStar} />
+              </div>
+              <p className="my-2">Purnava omega 3 Enri...</p>
+              <p>
+                <span className="text-[#7BAE00] font-bold text-[18px] mr-1">
+                  $200
+                </span>
+                <s className="text-[14px]">$210</s>
+              </p>
+            </Link>
+            <Link
+              className="flex flex-col justify-center items-center m-auto bg-white px-3 py-5 border-[1px] border-gray-250 hover:border-[#7BAE00] transition duration-300 group relative overflow-hidden"
+              href={"/Product-Details"}
+            >
+              <div className="bg-[#7BAE00] h-10 w-10 rounded-full flex justify-center items-center absolute top-5 right-5">
+                <FontAwesomeIcon className="text-white" icon={faHeart} />
+              </div>
+              <Image
+                className="scale-100 group-hover:scale-110 rotate-0 group-hover:rotate-3 transition duration-300 h-full w-full"
+                src={product7}
+                height={330}
+                width={330}
+                alt=""
+              />
+              <div className="py-3 px-8 bg-white text-black hover:bg-[#7BAE00] hover:text-white transition absolute mt-24 duration-300 opacity-0 group-hover:opacity-100 z-50">
+                <span>Add to Cart</span>
+              </div>
+              <div className="text-[#FFCC00]">
+                <FontAwesomeIcon icon={faStar} />
+                <FontAwesomeIcon icon={faStar} />
+                <FontAwesomeIcon icon={faStar} />
+                <FontAwesomeIcon icon={faStar} />
+                <FontAwesomeIcon icon={faStar} />
+              </div>
+              <p className="my-2">Purnava omega 3 Enri...</p>
+              <p>
+                <span className="text-[#7BAE00] font-bold text-[18px] mr-1">
+                  $200
+                </span>
+                <s className="text-[14px]">$210</s>
+              </p>
+            </Link>
+            <Link
+              className="flex flex-col justify-center items-center m-auto bg-white px-3 py-5 border-[1px] border-gray-250 hover:border-[#7BAE00] transition duration-300 group relative overflow-hidden"
+              href={"/Product-Details"}
+            >
+              <div className="bg-[#7BAE00] h-10 w-10 rounded-full flex justify-center items-center absolute top-5 right-5">
+                <FontAwesomeIcon className="text-white" icon={faHeart} />
+              </div>
+              <Image
+                className="scale-100 group-hover:scale-110 rotate-0 group-hover:rotate-3 transition duration-300 h-full w-full"
+                src={product8}
+                height={330}
+                width={330}
+                alt=""
+              />
+              <div className="py-3 px-8 bg-white text-black hover:bg-[#7BAE00] hover:text-white transition absolute mt-24 duration-300 opacity-0 group-hover:opacity-100 z-50">
+                <span>Add to Cart</span>
+              </div>
+              <div className="text-[#FFCC00]">
+                <FontAwesomeIcon icon={faStar} />
+                <FontAwesomeIcon icon={faStar} />
+                <FontAwesomeIcon icon={faStar} />
+                <FontAwesomeIcon icon={faStar} />
+                <FontAwesomeIcon icon={faStar} />
+              </div>
+              <p className="my-2">Purnava omega 3 Enri...</p>
+              <p>
+                <span className="text-[#7BAE00] font-bold text-[18px] mr-1">
+                  $200
+                </span>
+                <s className="text-[14px]">$210</s>
+              </p>
+            </Link>
+            <Link
+              className="flex flex-col justify-center items-center m-auto bg-white px-3 py-5 border-[1px] border-gray-250 hover:border-[#7BAE00] transition duration-300 group relative overflow-hidden"
+              href={"/Product-Details"}
+            >
+              <div className="bg-[#7BAE00] h-10 w-10 rounded-full flex justify-center items-center absolute top-5 right-5">
+                <FontAwesomeIcon className="text-white" icon={faHeart} />
+              </div>
+              <Image
+                className="scale-100 group-hover:scale-110 rotate-0 group-hover:rotate-3 transition duration-300 h-full w-full"
                 src={product4}
                 height={330}
                 width={330}
@@ -196,143 +316,8 @@ export const FeaturedProduct = () => {
               </p>
             </Link>
           </div>
-          <div className="px-3">
-            <Link
-              className="flex flex-col justify-center items-center m-auto bg-white px-3 py-5 border-[1px] border-gray-250 hover:border-[#7BAE00] transition duration-300 group relative overflow-hidden"
-              href={"/Shop"}
-            >
-              <div className="bg-[#7BAE00] h-10 w-10 rounded-full flex justify-center items-center absolute top-5 right-5">
-                <FontAwesomeIcon className="text-white" icon={faHeart} />
-              </div>
-              <Image
-                className="scale-100 group-hover:scale-110 rotate-0 group-hover:rotate-3 transition duration-300"
-                src={product5}
-                height={330}
-                width={330}
-                alt=""
-              />
-              <div className="py-3 px-8 bg-white text-black hover:bg-[#7BAE00] hover:text-white transition absolute mt-24 duration-300 opacity-0 group-hover:opacity-100 z-50">
-                <span>Add to Cart</span>
-              </div>
-              <div className="text-[#FFCC00]">
-                <FontAwesomeIcon icon={faStar} />
-                <FontAwesomeIcon icon={faStar} />
-                <FontAwesomeIcon icon={faStar} />
-                <FontAwesomeIcon icon={faStar} />
-                <FontAwesomeIcon icon={faStar} />
-              </div>
-              <p className="my-2">Purnava omega 3 Enri...</p>
-              <p>
-                <span className="text-[#7BAE00] font-bold text-[18px] mr-1">
-                  $200
-                </span>
-                <s className="text-[14px]">$210</s>
-              </p>
-            </Link>
-          </div>
-          <div className="px-3">
-            <Link
-              className="flex flex-col justify-center items-center m-auto bg-white px-3 py-5 border-[1px] border-gray-250 hover:border-[#7BAE00] transition duration-300 group relative overflow-hidden"
-              href={"/Shop"}
-            >
-              <div className="bg-[#7BAE00] h-10 w-10 rounded-full flex justify-center items-center absolute top-5 right-5">
-                <FontAwesomeIcon className="text-white" icon={faHeart} />
-              </div>
-              <Image
-                className="scale-100 group-hover:scale-110 rotate-0 group-hover:rotate-3 transition duration-300"
-                src={product6}
-                height={330}
-                width={330}
-                alt=""
-              />
-              <div className="py-3 px-8 bg-white text-black hover:bg-[#7BAE00] hover:text-white transition absolute mt-24 duration-300 opacity-0 group-hover:opacity-100 z-50">
-                <span>Add to Cart</span>
-              </div>
-              <div className="text-[#FFCC00]">
-                <FontAwesomeIcon icon={faStar} />
-                <FontAwesomeIcon icon={faStar} />
-                <FontAwesomeIcon icon={faStar} />
-                <FontAwesomeIcon icon={faStar} />
-                <FontAwesomeIcon icon={faStar} />
-              </div>
-              <p className="my-2">Purnava omega 3 Enri...</p>
-              <p>
-                <span className="text-[#7BAE00] font-bold text-[18px] mr-1">
-                  $200
-                </span>
-                <s className="text-[14px]">$210</s>
-              </p>
-            </Link>
-          </div>
-          <div className="px-3">
-            <Link
-              className="flex flex-col justify-center items-center m-auto bg-white px-3 py-5 border-[1px] border-gray-250 hover:border-[#7BAE00] transition duration-300 group relative overflow-hidden"
-              href={"/Shop"}
-            >
-              <div className="bg-[#7BAE00] h-10 w-10 rounded-full flex justify-center items-center absolute top-5 right-5">
-                <FontAwesomeIcon className="text-white" icon={faHeart} />
-              </div>
-              <Image
-                className="scale-100 group-hover:scale-110 rotate-0 group-hover:rotate-3 transition duration-300"
-                src={product7}
-                height={330}
-                width={330}
-                alt=""
-              />
-              <div className="py-3 px-8 bg-white text-black hover:bg-[#7BAE00] hover:text-white transition absolute mt-24 duration-300 opacity-0 group-hover:opacity-100 z-50">
-                <span>Add to Cart</span>
-              </div>
-              <div className="text-[#FFCC00]">
-                <FontAwesomeIcon icon={faStar} />
-                <FontAwesomeIcon icon={faStar} />
-                <FontAwesomeIcon icon={faStar} />
-                <FontAwesomeIcon icon={faStar} />
-                <FontAwesomeIcon icon={faStar} />
-              </div>
-              <p className="my-2">Purnava omega 3 Enri...</p>
-              <p>
-                <span className="text-[#7BAE00] font-bold text-[18px] mr-1">
-                  $200
-                </span>
-                <s className="text-[14px]">$210</s>
-              </p>
-            </Link>
-          </div>
-          <div className="px-3">
-            <Link
-              className="flex flex-col justify-center items-center m-auto bg-white px-3 py-5 border-[1px] border-gray-250 hover:border-[#7BAE00] transition duration-300 group relative overflow-hidden"
-              href={"/Shop"}
-            >
-              <div className="bg-[#7BAE00] h-10 w-10 rounded-full flex justify-center items-center absolute top-5 right-5">
-                <FontAwesomeIcon className="text-white" icon={faHeart} />
-              </div>
-              <Image
-                className="scale-100 group-hover:scale-110 rotate-0 group-hover:rotate-3 transition duration-300"
-                src={product8}
-                height={330}
-                width={330}
-                alt=""
-              />
-              <div className="py-3 px-8 bg-white text-black hover:bg-[#7BAE00] hover:text-white transition absolute mt-24 duration-300 opacity-0 group-hover:opacity-100 z-50">
-                <span>Add to Cart</span>
-              </div>
-              <div className="text-[#FFCC00]">
-                <FontAwesomeIcon icon={faStar} />
-                <FontAwesomeIcon icon={faStar} />
-                <FontAwesomeIcon icon={faStar} />
-                <FontAwesomeIcon icon={faStar} />
-                <FontAwesomeIcon icon={faStar} />
-              </div>
-              <p className="my-2">Purnava omega 3 Enri...</p>
-              <p>
-                <span className="text-[#7BAE00] font-bold text-[18px] mr-1">
-                  $200
-                </span>
-                <s className="text-[14px]">$210</s>
-              </p>
-            </Link>
-          </div>
-        </Slider>
+        </div>
+        <div></div>
       </div>
     </div>
   );

@@ -1,12 +1,12 @@
-import { BlogPage } from "@/components/BlogPage/BlogPage";
+import { LoginPage } from "@/components/LoginPage/LoginPage";
 import { Inter } from "next/font/google";
 
 const inter = Inter({ subsets: ["latin"] });
 
-export default function Blog() {
+export default function Cart() {
   return (
     <main>
-      <BlogPage />
+      <LoginPage />
     </main>
   );
 }

@@ -9,6 +9,7 @@ import product7 from "../../../public/img/product/7.png";
 import product8 from "../../../public/img/product/8.png";
 import { faStar } from "@fortawesome/free-solid-svg-icons";
 import { faHeart } from "@fortawesome/free-regular-svg-icons";
+import { faArrowRightLong } from "@fortawesome/free-solid-svg-icons";
 import Link from "next/link";
 import React from "react";
 import Slider from "react-slick";
@@ -25,7 +26,7 @@ const FontAwesomeIcon = dynamic(
   { ssr: false }
 );
 
-export const FeaturedProduct = () => {
+export const Related = () => {
   let settings = {
     arrows: true,
     infinite: true,
@@ -58,12 +59,24 @@ export const FeaturedProduct = () => {
   };
   return (
     <div>
-      <div className="max-w-screen-xl mx-auto">
+      <div className="max-w-screen-xl mx-auto flex justify-between items-center my-10">
+        <h2 className="font-bold text-[24px] text-[#0B2B3C]">
+          Related Category
+        </h2>
+        <Link
+          className="bg-[#87B944] hover:bg-[#0B2B3C] transition duration-500 px-[30px] py-[15px] text-white font-bold"
+          href={"/Shop"}
+        >
+          VIEW ALL
+          <FontAwesomeIcon className="text-white" icon={faArrowRightLong} />
+        </Link>
+      </div>
+      <div className="max-w-screen-xl mx-auto pb-24">
         <Slider {...settings}>
           <div className="px-3 over">
             <Link
               className="flex flex-col justify-center items-center m-auto bg-white px-3 py-5 border-[1px] border-gray-250 hover:border-[#7BAE00] transition duration-300 group relative overflow-hidden"
-              href={"/Shop"}
+              href={"/Product-Details"}
             >
               <div className="bg-[#7BAE00] h-10 w-10 rounded-full flex justify-center items-center absolute top-5 right-5">
                 <FontAwesomeIcon className="text-white" icon={faHeart} />
@@ -97,7 +110,7 @@ export const FeaturedProduct = () => {
           <div className="px-3">
             <Link
               className="flex flex-col justify-center items-center m-auto bg-white px-3 py-5 border-[1px] border-gray-250 hover:border-[#7BAE00] transition duration-300 group relative overflow-hidden"
-              href={"/Shop"}
+              href={"/Product-Details"}
             >
               <div className="bg-[#7BAE00] h-10 w-10 rounded-full flex justify-center items-center absolute top-5 right-5">
                 <FontAwesomeIcon className="text-white" icon={faHeart} />
@@ -131,7 +144,7 @@ export const FeaturedProduct = () => {
           <div className="px-3">
             <Link
               className="flex flex-col justify-center items-center m-auto bg-white px-3 py-5 border-[1px] border-gray-250 hover:border-[#7BAE00] transition duration-300 group relative overflow-hidden"
-              href={"/Shop"}
+              href={"/Product-Details"}
             >
               <div className="bg-[#7BAE00] h-10 w-10 rounded-full flex justify-center items-center absolute top-5 right-5">
                 <FontAwesomeIcon className="text-white" icon={faHeart} />
@@ -165,7 +178,7 @@ export const FeaturedProduct = () => {
           <div className="px-3">
             <Link
               className="flex flex-col justify-center items-center m-auto bg-white px-3 py-5 border-[1px] border-gray-250 hover:border-[#7BAE00] transition duration-300 group relative overflow-hidden"
-              href={"/Shop"}
+              href={"/Product-Details"}
             >
               <div className="bg-[#7BAE00] h-10 w-10 rounded-full flex justify-center items-center absolute top-5 right-5">
                 <FontAwesomeIcon className="text-white" icon={faHeart} />
@@ -199,7 +212,7 @@ export const FeaturedProduct = () => {
           <div className="px-3">
             <Link
               className="flex flex-col justify-center items-center m-auto bg-white px-3 py-5 border-[1px] border-gray-250 hover:border-[#7BAE00] transition duration-300 group relative overflow-hidden"
-              href={"/Shop"}
+              href={"/Product-Details"}
             >
               <div className="bg-[#7BAE00] h-10 w-10 rounded-full flex justify-center items-center absolute top-5 right-5">
                 <FontAwesomeIcon className="text-white" icon={faHeart} />
@@ -233,7 +246,7 @@ export const FeaturedProduct = () => {
           <div className="px-3">
             <Link
               className="flex flex-col justify-center items-center m-auto bg-white px-3 py-5 border-[1px] border-gray-250 hover:border-[#7BAE00] transition duration-300 group relative overflow-hidden"
-              href={"/Shop"}
+              href={"/Product-Details"}
             >
               <div className="bg-[#7BAE00] h-10 w-10 rounded-full flex justify-center items-center absolute top-5 right-5">
                 <FontAwesomeIcon className="text-white" icon={faHeart} />
@@ -267,7 +280,7 @@ export const FeaturedProduct = () => {
           <div className="px-3">
             <Link
               className="flex flex-col justify-center items-center m-auto bg-white px-3 py-5 border-[1px] border-gray-250 hover:border-[#7BAE00] transition duration-300 group relative overflow-hidden"
-              href={"/Shop"}
+              href={"/Product-Details"}
             >
               <div className="bg-[#7BAE00] h-10 w-10 rounded-full flex justify-center items-center absolute top-5 right-5">
                 <FontAwesomeIcon className="text-white" icon={faHeart} />
@@ -301,7 +314,7 @@ export const FeaturedProduct = () => {
           <div className="px-3">
             <Link
               className="flex flex-col justify-center items-center m-auto bg-white px-3 py-5 border-[1px] border-gray-250 hover:border-[#7BAE00] transition duration-300 group relative overflow-hidden"
-              href={"/Shop"}
+              href={"/Product-Details"}
             >
               <div className="bg-[#7BAE00] h-10 w-10 rounded-full flex justify-center items-center absolute top-5 right-5">
                 <FontAwesomeIcon className="text-white" icon={faHeart} />

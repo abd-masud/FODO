@@ -1,13 +1,13 @@
 import { Footer } from "../Footer/Footer";
 import { Header } from "../Header/Header";
 import { Category } from "./Category";
-import { Slider } from "./Slider";
+import { HomeSlider } from "./HomeSlider";
 
 export const HomePage = () => {
   return (
     <main>
       <Header />
-      <Slider />
+      <HomeSlider />
       <Category />
       <Footer />
     </main>
