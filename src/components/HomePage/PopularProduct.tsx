@@ -27,14 +27,14 @@ export const PopularProduct = () => {
       <div className="max-w-screen-xl mx-auto">
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
           <Link
-            className="flex flex-col justify-center items-center m-auto bg-white px-3 py-5 border-[1px] border-gray-250 hover:border-[#7BAE00] transition duration-300 group relative"
-            href={""}
+            className="flex flex-col justify-center items-center m-auto bg-white px-3 py-5 border-[1px] border-gray-250 hover:border-[#7BAE00] transition duration-300 group relative overflow-hidden"
+            href={"/Product-Details"}
           >
             <div className="bg-[#7BAE00] h-10 w-10 rounded-full flex justify-center items-center absolute top-5 right-5">
               <FontAwesomeIcon className="text-white" icon={faHeart} />
             </div>
             <Image
-              className="scale-100 group-hover:scale-110 rotate-0 group-hover:rotate-3 transition duration-300"
+              className="scale-100 group-hover:scale-110 rotate-0 group-hover:rotate-3 transition duration-300 h-full w-full"
               src={product1}
               height={330}
               width={330}
@@ -59,14 +59,14 @@ export const PopularProduct = () => {
             </p>
           </Link>
           <Link
-            className="flex flex-col justify-center items-center m-auto bg-white px-3 py-5 border-[1px] border-gray-250 hover:border-[#7BAE00] transition duration-300 group relative"
-            href={""}
+            className="flex flex-col justify-center items-center m-auto bg-white px-3 py-5 border-[1px] border-gray-250 hover:border-[#7BAE00] transition duration-300 group relative overflow-hidden"
+            href={"/Product-Details"}
           >
             <div className="bg-[#7BAE00] h-10 w-10 rounded-full flex justify-center items-center absolute top-5 right-5">
               <FontAwesomeIcon className="text-white" icon={faHeart} />
             </div>
             <Image
-              className="scale-100 group-hover:scale-110 rotate-0 group-hover:rotate-3 transition duration-300"
+              className="scale-100 group-hover:scale-110 rotate-0 group-hover:rotate-3 transition duration-300 h-full w-full"
               src={product2}
               height={330}
               width={330}
@@ -91,14 +91,14 @@ export const PopularProduct = () => {
             </p>
           </Link>
           <Link
-            className="flex flex-col justify-center items-center m-auto bg-white px-3 py-5 border-[1px] border-gray-250 hover:border-[#7BAE00] transition duration-300 group relative"
-            href={""}
+            className="flex flex-col justify-center items-center m-auto bg-white px-3 py-5 border-[1px] border-gray-250 hover:border-[#7BAE00] transition duration-300 group relative overflow-hidden"
+            href={"/Product-Details"}
           >
             <div className="bg-[#7BAE00] h-10 w-10 rounded-full flex justify-center items-center absolute top-5 right-5">
               <FontAwesomeIcon className="text-white" icon={faHeart} />
             </div>
             <Image
-              className="scale-100 group-hover:scale-110 rotate-0 group-hover:rotate-3 transition duration-300"
+              className="scale-100 group-hover:scale-110 rotate-0 group-hover:rotate-3 transition duration-300 h-full w-full"
               src={product3}
               height={330}
               width={330}
@@ -123,14 +123,14 @@ export const PopularProduct = () => {
             </p>
           </Link>
           <Link
-            className="flex flex-col justify-center items-center m-auto bg-white px-3 py-5 border-[1px] border-gray-250 hover:border-[#7BAE00] transition duration-300 group relative"
-            href={""}
+            className="flex flex-col justify-center items-center m-auto bg-white px-3 py-5 border-[1px] border-gray-250 hover:border-[#7BAE00] transition duration-300 group relative overflow-hidden"
+            href={"/Product-Details"}
           >
             <div className="bg-[#7BAE00] h-10 w-10 rounded-full flex justify-center items-center absolute top-5 right-5">
               <FontAwesomeIcon className="text-white" icon={faHeart} />
             </div>
             <Image
-              className="scale-100 group-hover:scale-110 rotate-0 group-hover:rotate-3 transition duration-300"
+              className="scale-100 group-hover:scale-110 rotate-0 group-hover:rotate-3 transition duration-300 h-full w-full"
               src={product4}
               height={330}
               width={330}
@@ -155,14 +155,14 @@ export const PopularProduct = () => {
             </p>
           </Link>
           <Link
-            className="flex flex-col justify-center items-center m-auto bg-white px-3 py-5 border-[1px] border-gray-250 hover:border-[#7BAE00] transition duration-300 group relative"
-            href={""}
+            className="flex flex-col justify-center items-center m-auto bg-white px-3 py-5 border-[1px] border-gray-250 hover:border-[#7BAE00] transition duration-300 group relative overflow-hidden"
+            href={"/Product-Details"}
           >
             <div className="bg-[#7BAE00] h-10 w-10 rounded-full flex justify-center items-center absolute top-5 right-5">
               <FontAwesomeIcon className="text-white" icon={faHeart} />
             </div>
             <Image
-              className="scale-100 group-hover:scale-110 rotate-0 group-hover:rotate-3 transition duration-300"
+              className="scale-100 group-hover:scale-110 rotate-0 group-hover:rotate-3 transition duration-300 h-full w-full"
               src={product5}
               height={330}
               width={330}
@@ -187,14 +187,14 @@ export const PopularProduct = () => {
             </p>
           </Link>
           <Link
-            className="flex flex-col justify-center items-center m-auto bg-white px-3 py-5 border-[1px] border-gray-250 hover:border-[#7BAE00] transition duration-300 group relative"
-            href={""}
+            className="flex flex-col justify-center items-center m-auto bg-white px-3 py-5 border-[1px] border-gray-250 hover:border-[#7BAE00] transition duration-300 group relative overflow-hidden"
+            href={"/Product-Details"}
           >
             <div className="bg-[#7BAE00] h-10 w-10 rounded-full flex justify-center items-center absolute top-5 right-5">
               <FontAwesomeIcon className="text-white" icon={faHeart} />
             </div>
             <Image
-              className="scale-100 group-hover:scale-110 rotate-0 group-hover:rotate-3 transition duration-300"
+              className="scale-100 group-hover:scale-110 rotate-0 group-hover:rotate-3 transition duration-300 h-full w-full"
               src={product6}
               height={330}
               width={330}
@@ -219,14 +219,14 @@ export const PopularProduct = () => {
             </p>
           </Link>
           <Link
-            className="flex flex-col justify-center items-center m-auto bg-white px-3 py-5 border-[1px] border-gray-250 hover:border-[#7BAE00] transition duration-300 group relative"
-            href={""}
+            className="flex flex-col justify-center items-center m-auto bg-white px-3 py-5 border-[1px] border-gray-250 hover:border-[#7BAE00] transition duration-300 group relative overflow-hidden"
+            href={"/Product-Details"}
           >
             <div className="bg-[#7BAE00] h-10 w-10 rounded-full flex justify-center items-center absolute top-5 right-5">
               <FontAwesomeIcon className="text-white" icon={faHeart} />
             </div>
             <Image
-              className="scale-100 group-hover:scale-110 rotate-0 group-hover:rotate-3 transition duration-300"
+              className="scale-100 group-hover:scale-110 rotate-0 group-hover:rotate-3 transition duration-300 h-full w-full"
               src={product7}
               height={330}
               width={330}
@@ -251,14 +251,14 @@ export const PopularProduct = () => {
             </p>
           </Link>
           <Link
-            className="flex flex-col justify-center items-center m-auto bg-white px-3 py-5 border-[1px] border-gray-250 hover:border-[#7BAE00] transition duration-300 group relative"
-            href={""}
+            className="flex flex-col justify-center items-center m-auto bg-white px-3 py-5 border-[1px] border-gray-250 hover:border-[#7BAE00] transition duration-300 group relative overflow-hidden"
+            href={"/Product-Details"}
           >
             <div className="bg-[#7BAE00] h-10 w-10 rounded-full flex justify-center items-center absolute top-5 right-5">
               <FontAwesomeIcon className="text-white" icon={faHeart} />
             </div>
             <Image
-              className="scale-100 group-hover:scale-110 rotate-0 group-hover:rotate-3 transition duration-300"
+              className="scale-100 group-hover:scale-110 rotate-0 group-hover:rotate-3 transition duration-300 h-full w-full"
               src={product8}
               height={330}
               width={330}

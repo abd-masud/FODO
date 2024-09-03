@@ -27,7 +27,7 @@ export const SummerSale = () => {
           <div className="mb-20">
             <Link
               className="px-10 py-5 bg-[#7BAE00] hover:bg-[#0B2B3C] text-white font-[500] rounded-full transition duration-300"
-              href={""}
+              href={"/Shop"}
             >
               SHOP NOW
               <FontAwesomeIcon className="text-white" icon={faArrowRightLong} />

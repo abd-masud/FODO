@@ -3,9 +3,11 @@ import { Navigation } from "./Navigation";
 
 export const Header = () => {
   return (
-    <main>
+    <>
       <Contract />
-      {/* <Navigation /> */}
-    </main>
+      <div className="sticky top-0 z-50">
+        <Navigation />
+      </div>
+    </>
   );
 };

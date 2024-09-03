@@ -29,7 +29,7 @@ export const Category = () => {
         </h2>
         <Link
           className="bg-[#87B944] hover:bg-[#0B2B3C] transition duration-500 px-[30px] py-[15px] text-white font-bold"
-          href={"shop"}
+          href={"/Shop"}
         >
           VIEW ALL
           <FontAwesomeIcon className="text-white" icon={faArrowRightLong} />
@@ -42,7 +42,7 @@ export const Category = () => {
         </h2>
         <Link
           className="bg-[#87B944] hover:bg-[#0B2B3C] transition duration-500 px-[30px] py-[15px] text-white font-bold"
-          href={"shop"}
+          href={"/Shop"}
         >
           VIEW ALL
           <FontAwesomeIcon className="text-white" icon={faArrowRightLong} />
@@ -57,7 +57,7 @@ export const Category = () => {
         </h2>
         <Link
           className="bg-[#87B944] hover:bg-[#0B2B3C] transition duration-500 px-[30px] py-[15px] text-white font-bold"
-          href={"shop"}
+          href={"/Shop"}
         >
           VIEW ALL
           <FontAwesomeIcon className="text-white" icon={faArrowRightLong} />
@@ -70,7 +70,7 @@ export const Category = () => {
         </h2>
         <Link
           className="bg-[#87B944] hover:bg-[#0B2B3C] transition duration-500 px-[30px] py-[15px] text-white font-bold"
-          href={"shop"}
+          href={"/Shop"}
         >
           VIEW ALL
           <FontAwesomeIcon className="text-white" icon={faArrowRightLong} />

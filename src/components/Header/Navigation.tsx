@@ -1,3 +1,4 @@
+import { useState } from "react";
 import Link from "next/link";
 import {
   Navbar,
@@ -8,20 +9,15 @@ import {
 } from "flowbite-react";
 import Image from "next/image";
 import logo from "../../../public/img/logo.png";
-import { faCartShopping } from "@fortawesome/free-solid-svg-icons";
-import dynamic from "next/dynamic";
-
-const FontAwesomeIcon = dynamic(
-  () =>
-    import("@fortawesome/react-fontawesome").then(
-      (module) => module.FontAwesomeIcon
-    ),
-  { ssr: false }
-);
 
 export const Navigation = () => {
+  const [isHoveredShop, setIsHoveredShop] = useState(false);
+  const [isHoveredVendor, setIsHoveredVendor] = useState(false);
+  const [isHoveredCart, setIsHoveredCart] = useState(false);
+  const [isHoveredWishlist, setIsHoveredWishlist] = useState(false);
+  const [isHoveredLogin, setIsHoveredLogin] = useState(false);
   return (
-    <div className="bg-white">
+    <div className="bg-white border-b border-[#F2F3F9] py-8">
       <Navbar
         className="max-w-screen-xl m-auto flex items-center"
         style={{ padding: 0 }}
@@ -31,24 +27,75 @@ export const Navigation = () => {
         </NavbarBrand>
         <NavbarToggle />
         <NavbarCollapse>
-          <NavbarLink as={Link} href="#">
+          <NavbarLink
+            style={{
+              color: isHoveredShop ? "#7BAE00" : "black",
+              fontSize: "16px",
+              transition: "0.3s",
+            }}
+            onMouseEnter={() => setIsHoveredShop(true)}
+            onMouseLeave={() => setIsHoveredShop(false)}
+            as={Link}
+            href="/Shop"
+          >
+            <style jsx>{`
+              NavbarLink:hover {
+                color: #7bae00;
+              }
+            `}</style>
             Shop
           </NavbarLink>
-          <NavbarLink as={Link} href="#">
+          <NavbarLink
+            style={{
+              color: isHoveredVendor ? "#7BAE00" : "black",
+              fontSize: "16px",
+              transition: "0.3s",
+            }}
+            onMouseEnter={() => setIsHoveredVendor(true)}
+            onMouseLeave={() => setIsHoveredVendor(false)}
+            as={Link}
+            href="/Vendor"
+          >
             Vendor
           </NavbarLink>
           <NavbarLink
+            style={{
+              color: isHoveredCart ? "#7BAE00" : "black",
+              fontSize: "16px",
+              transition: "0.3s",
+            }}
+            onMouseEnter={() => setIsHoveredCart(true)}
+            onMouseLeave={() => setIsHoveredCart(false)}
             as={Link}
-            href="#"
-            className="shadow h-[45px] w-[45px] flex justify-center items-center bg-white hover:bg-[#7BAE00] text-black hover:text-white transition"
+            href="/Cart"
           >
-            <FontAwesomeIcon className="text-inherit" icon={faCartShopping} />
+            Cart
           </NavbarLink>
-          <NavbarLink as={Link} href="#">
-            Vendor
+          <NavbarLink
+            style={{
+              color: isHoveredWishlist ? "#7BAE00" : "black",
+              fontSize: "16px",
+              transition: "0.3s",
+            }}
+            onMouseEnter={() => setIsHoveredWishlist(true)}
+            onMouseLeave={() => setIsHoveredWishlist(false)}
+            as={Link}
+            href="/Wishlist"
+          >
+            Wishlist
           </NavbarLink>
-          <NavbarLink as={Link} href="#">
-            Vendor
+          <NavbarLink
+            style={{
+              color: isHoveredLogin ? "#7BAE00" : "black",
+              fontSize: "16px",
+              transition: "0.3s",
+            }}
+            onMouseEnter={() => setIsHoveredLogin(true)}
+            onMouseLeave={() => setIsHoveredLogin(false)}
+            as={Link}
+            href="/Login"
+          >
+            login
           </NavbarLink>
         </NavbarCollapse>
       </Navbar>

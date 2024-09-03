@@ -15,7 +15,7 @@ export const PopularCate = () => {
       <div className="max-w-screen-xl mx-auto">
         <div className="grid grid-cols-3 sm:grid-cols-4 md:grid-cols-5 lg:grid-cols-6 gap-x-4">
           <Link
-            href={""}
+            href={"/Shop"}
             className="m-auto w-[100%] h-[126px] mb-8 border-[1px] border-gray-250 hover:border-[#7BAE00] transition rounded bg-white text-center"
           >
             <Image
@@ -28,7 +28,7 @@ export const PopularCate = () => {
             Fresh Fruits
           </Link>
           <Link
-            href={""}
+            href={"/Shop"}
             className="m-auto w-[100%] h-[126px] mb-8 border-[1px] border-gray-250 hover:border-[#7BAE00] transition rounded bg-white text-center"
           >
             <Image
@@ -41,7 +41,7 @@ export const PopularCate = () => {
             Vegetable
           </Link>
           <Link
-            href={""}
+            href={"/Shop"}
             className="m-auto w-[100%] h-[126px] mb-8 border-[1px] border-gray-250 hover:border-[#7BAE00] transition rounded bg-white text-center"
           >
             <Image
@@ -54,7 +54,7 @@ export const PopularCate = () => {
             Breakfast
           </Link>
           <Link
-            href={""}
+            href={"/Shop"}
             className="m-auto w-[100%] h-[126px] mb-8 border-[1px] border-gray-250 hover:border-[#7BAE00] transition rounded bg-white text-center"
           >
             <Image
@@ -67,7 +67,7 @@ export const PopularCate = () => {
             Meet & Fish
           </Link>
           <Link
-            href={""}
+            href={"/Shop"}
             className="m-auto w-[100%] h-[126px] mb-8 border-[1px] border-gray-250 hover:border-[#7BAE00] transition rounded bg-white text-center"
           >
             <Image
@@ -80,7 +80,7 @@ export const PopularCate = () => {
             Fresh Fruits
           </Link>
           <Link
-            href={""}
+            href={"/Shop"}
             className="m-auto w-[100%] h-[126px] mb-8 border-[1px] border-gray-250 hover:border-[#7BAE00] transition rounded bg-white text-center"
           >
             <Image
@@ -93,7 +93,7 @@ export const PopularCate = () => {
             Beverages
           </Link>
           <Link
-            href={""}
+            href={"/Shop"}
             className="m-auto w-[100%] h-[126px] mb-8 border-[1px] border-gray-250 hover:border-[#7BAE00] transition rounded bg-white text-center"
           >
             <Image
@@ -106,7 +106,7 @@ export const PopularCate = () => {
             Beverages
           </Link>
           <Link
-            href={""}
+            href={"/Shop"}
             className="m-auto w-[100%] h-[126px] mb-8 border-[1px] border-gray-250 hover:border-[#7BAE00] transition rounded bg-white text-center"
           >
             <Image
@@ -119,7 +119,7 @@ export const PopularCate = () => {
             Beverages
           </Link>
           <Link
-            href={""}
+            href={"/Shop"}
             className="m-auto w-[100%] h-[126px] mb-8 border-[1px] border-gray-250 hover:border-[#7BAE00] transition rounded bg-white text-center"
           >
             <Image
@@ -132,7 +132,7 @@ export const PopularCate = () => {
             Snacks
           </Link>
           <Link
-            href={""}
+            href={"/Shop"}
             className="m-auto w-[100%] h-[126px] mb-8 border-[1px] border-gray-250 hover:border-[#7BAE00] transition rounded bg-white text-center"
           >
             <Image
@@ -145,7 +145,7 @@ export const PopularCate = () => {
             Beauty & Healthy
           </Link>
           <Link
-            href={""}
+            href={"/Shop"}
             className="m-auto w-[100%] h-[126px] mb-8 border-[1px] border-gray-250 hover:border-[#7BAE00] transition rounded bg-white text-center"
           >
             <Image
@@ -158,7 +158,7 @@ export const PopularCate = () => {
             Cooking
           </Link>
           <Link
-            href={""}
+            href={"/Shop"}
             className="m-auto w-[100%] h-[126px] mb-8 border-[1px] border-gray-250 hover:border-[#7BAE00] transition rounded bg-white text-center"
           >
             <Image

@@ -28,7 +28,7 @@ export const FeaturedProduct = () => {
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
           <Link
             className="flex flex-col justify-center items-center m-auto bg-white px-3 py-5 border-[1px] border-gray-250 hover:border-[#7BAE00] transition duration-300 group relative"
-            href={""}
+            href={"/Shop"}
           >
             <div className="bg-[#7BAE00] h-10 w-10 rounded-full flex justify-center items-center absolute top-5 right-5">
               <FontAwesomeIcon className="text-white" icon={faHeart} />
@@ -60,7 +60,7 @@ export const FeaturedProduct = () => {
           </Link>
           <Link
             className="flex flex-col justify-center items-center m-auto bg-white px-3 py-5 border-[1px] border-gray-250 hover:border-[#7BAE00] transition duration-300 group relative"
-            href={""}
+            href={"/Shop"}
           >
             <div className="bg-[#7BAE00] h-10 w-10 rounded-full flex justify-center items-center absolute top-5 right-5">
               <FontAwesomeIcon className="text-white" icon={faHeart} />
@@ -92,7 +92,7 @@ export const FeaturedProduct = () => {
           </Link>
           <Link
             className="flex flex-col justify-center items-center m-auto bg-white px-3 py-5 border-[1px] border-gray-250 hover:border-[#7BAE00] transition duration-300 group relative"
-            href={""}
+            href={"/Shop"}
           >
             <div className="bg-[#7BAE00] h-10 w-10 rounded-full flex justify-center items-center absolute top-5 right-5">
               <FontAwesomeIcon className="text-white" icon={faHeart} />
@@ -124,7 +124,7 @@ export const FeaturedProduct = () => {
           </Link>
           <Link
             className="flex flex-col justify-center items-center m-auto bg-white px-3 py-5 border-[1px] border-gray-250 hover:border-[#7BAE00] transition duration-300 group relative"
-            href={""}
+            href={"/Shop"}
           >
             <div className="bg-[#7BAE00] h-10 w-10 rounded-full flex justify-center items-center absolute top-5 right-5">
               <FontAwesomeIcon className="text-white" icon={faHeart} />
@@ -156,7 +156,7 @@ export const FeaturedProduct = () => {
           </Link>
           <Link
             className="flex flex-col justify-center items-center m-auto bg-white px-3 py-5 border-[1px] border-gray-250 hover:border-[#7BAE00] transition duration-300 group relative"
-            href={""}
+            href={"/Shop"}
           >
             <div className="bg-[#7BAE00] h-10 w-10 rounded-full flex justify-center items-center absolute top-5 right-5">
               <FontAwesomeIcon className="text-white" icon={faHeart} />
@@ -188,7 +188,7 @@ export const FeaturedProduct = () => {
           </Link>
           <Link
             className="flex flex-col justify-center items-center m-auto bg-white px-3 py-5 border-[1px] border-gray-250 hover:border-[#7BAE00] transition duration-300 group relative"
-            href={""}
+            href={"/Shop"}
           >
             <div className="bg-[#7BAE00] h-10 w-10 rounded-full flex justify-center items-center absolute top-5 right-5">
               <FontAwesomeIcon className="text-white" icon={faHeart} />
@@ -220,7 +220,7 @@ export const FeaturedProduct = () => {
           </Link>
           <Link
             className="flex flex-col justify-center items-center m-auto bg-white px-3 py-5 border-[1px] border-gray-250 hover:border-[#7BAE00] transition duration-300 group relative"
-            href={""}
+            href={"/Shop"}
           >
             <div className="bg-[#7BAE00] h-10 w-10 rounded-full flex justify-center items-center absolute top-5 right-5">
               <FontAwesomeIcon className="text-white" icon={faHeart} />
@@ -252,7 +252,7 @@ export const FeaturedProduct = () => {
           </Link>
           <Link
             className="flex flex-col justify-center items-center m-auto bg-white px-3 py-5 border-[1px] border-gray-250 hover:border-[#7BAE00] transition duration-300 group relative"
-            href={""}
+            href={"/Shop"}
           >
             <div className="bg-[#7BAE00] h-10 w-10 rounded-full flex justify-center items-center absolute top-5 right-5">
               <FontAwesomeIcon className="text-white" icon={faHeart} />
