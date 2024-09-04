@@ -17,7 +17,7 @@ export const Navigation = () => {
   const [isHoveredWishlist, setIsHoveredWishlist] = useState(false);
   const [isHoveredLogin, setIsHoveredLogin] = useState(false);
   return (
-    <div className="bg-white border-b border-[#F2F3F9] py-8 px-6">
+    <div className="bg-white border-b shadow-lg border-[#F2F3F9] py-8 px-6">
       <Navbar
         className="max-w-screen-xl m-auto flex items-center"
         style={{ padding: 0 }}
@@ -93,9 +93,9 @@ export const Navigation = () => {
             onMouseEnter={() => setIsHoveredLogin(true)}
             onMouseLeave={() => setIsHoveredLogin(false)}
             as={Link}
-            href="/Login"
+            href="/SignIn"
           >
-            login
+            Sign In
           </NavbarLink>
         </NavbarCollapse>
       </Navbar>

@@ -1,15 +1,13 @@
 import { Footer } from "../Footer/Footer";
 import { Header } from "../Header/Header";
 import { BreadCrumb } from "./Breadcrumb";
-import { CartTable } from "./CartTable";
 
-export const CartPage = () => {
+export const WishTable = () => {
   return (
     <main>
       <Header />
       <BreadCrumb />
-      <CartTable />
-      <Footer />
+      <section className="wishlist-page"></section>
     </main>
   );
 };

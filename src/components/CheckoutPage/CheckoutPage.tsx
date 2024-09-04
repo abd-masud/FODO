@@ -1,14 +1,14 @@
 import { Footer } from "../Footer/Footer";
 import { Header } from "../Header/Header";
 import { BreadCrumb } from "./Breadcrumb";
-import { CartTable } from "./CartTable";
+import { CheckoutForms } from "./CheckoutForms";
 
-export const CartPage = () => {
+export const CheckoutPage = () => {
   return (
     <main>
       <Header />
       <BreadCrumb />
-      <CartTable />
+      <CheckoutForms />
       <Footer />
     </main>
   );

@@ -30,11 +30,11 @@ export const HomeSlider = () => {
       <Slider {...settings}>
         <div className="bg-[url('/img/slider1.jpg')] bg-cover bg-center w-full flex items-center py-[150px]">
           <div className="max-w-screen-xl m-auto">
-            <p className="font-[900] leading-[55px] text-[50px] text-[#0B2B3C]">
+            <h1 className="font-[900] leading-[55px] text-[50px] text-[#0B2B3C]">
               Fresh Food & Healthy
               <br />
               Organic Food
-            </p>
+            </h1>
             <div className="border-l-4 border-[#7BAE00] my-8">
               <p className="text-[20px] text-[##0B2B3C] font-bold ml-5">
                 Sale Up To <span>35% Off</span>
@@ -54,11 +54,11 @@ export const HomeSlider = () => {
         </div>
         <div className="bg-[url('/img/slider2.jpg')] bg-cover bg-center w-full flex items-center py-[150px]">
           <div className="max-w-screen-xl m-auto text-right">
-            <p className="font-[900] leading-[55px] text-[50px] text-[#0B2B3C]">
+            <h1 className="font-[900] leading-[55px] text-[50px] text-[#0B2B3C]">
               Fresh Food & Healthy
               <br />
               Organic Food
-            </p>
+            </h1>
             <div className="border-r-4 border-[#7BAE00] my-8">
               <p className="text-[20px] text-[##0B2B3C] font-bold mr-5">
                 Sale Up To <span>35% Off</span>
