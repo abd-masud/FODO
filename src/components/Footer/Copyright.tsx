@@ -11,7 +11,7 @@ export const Copyright = () => {
         <div className="text-[#A29E9E] text-[15px]">
           Copyright © 2021 Fodo Theme by{" "}
           <span className="font-bold no-underline hover:underline text-[#A29E9E] hover:text-white transition duration-500">
-            CodexUnicTheme
+            Al Ahsan
           </span>
         </div>
       </div>

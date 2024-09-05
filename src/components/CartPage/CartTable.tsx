@@ -297,14 +297,12 @@ export const CartTable = () => {
                 <span>Grand Total</span>
                 <span>${grandTotal.toFixed(2)}</span>
               </div>
-              <Link href={"/Checkout"}>
-                <button
-                  onClick={handleProceedToCheckout}
-                  className="text-white bg-[#7BAE00] hover:bg-[#0B2B3C] py-[15px] px-[30px] transition duration-300 mt-3"
-                >
-                  PROCEED TO CHECKOUT
-                </button>
-              </Link>
+              <button
+                onClick={handleProceedToCheckout}
+                className="text-white bg-[#7BAE00] hover:bg-[#0B2B3C] py-[15px] px-[30px] transition duration-300 mt-3"
+              >
+                PROCEED TO CHECKOUT
+              </button>
             </div>
           </div>
         </div>
