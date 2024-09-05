@@ -5,6 +5,8 @@ import { faGoogle } from "@fortawesome/free-brands-svg-icons";
 import { faFacebookF } from "@fortawesome/free-brands-svg-icons";
 import { faTwitter } from "@fortawesome/free-brands-svg-icons";
 import dynamic from "next/dynamic";
+import { useState } from "react";
+import { useRouter } from "next/router";
 
 const FontAwesomeIcon = dynamic(
   () =>
@@ -15,6 +17,31 @@ const FontAwesomeIcon = dynamic(
 );
 
 export const SignUpPage = () => {
+  const [password, setPassword] = useState("");
+  const [confirmPassword, setConfirmPassword] = useState("");
+  const [error, setError] = useState("");
+  const router = useRouter(); 
+
+  const validatePassword = (password: string) => {
+    const passwordRegex = /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,}$/;
+    return passwordRegex.test(password);
+  };
+
+  const handleSubmit = (e: { preventDefault: () => void; }) => {
+    e.preventDefault();
+
+    if (!validatePassword(password)) {
+      setError(
+        "Password must be at least 8 characters long and include numbers, capital letters, lowercase letters, and special symbols."
+      );
+    } else if (password !== confirmPassword) {
+      setError("Passwords do not match");
+    } else {
+      setError("");
+      console.log("Form submitted");
+      router.push("/SignIn");
+    }
+  };
   return (
     <main>
       <Header />
@@ -62,6 +89,8 @@ export const SignUpPage = () => {
                 id="name"
                 className="border-[#EEEEEE] focus:outline-none focus:ring-0 focus:border-[#EEEEEE] mb-6 text-[15px] py-[15px] px-[30px]"
                 type="text"
+                required
+                autoComplete="off"
               />
             </div>
             <div className="flex flex-col relative">
@@ -75,6 +104,8 @@ export const SignUpPage = () => {
                 id="username"
                 className="border-[#EEEEEE] focus:outline-none focus:ring-0 focus:border-[#EEEEEE] mb-6 text-[15px] py-[15px] px-[30px]"
                 type="text"
+                required
+                autoComplete="off"
               />
             </div>
             <div className="flex flex-col relative">
@@ -88,27 +119,38 @@ export const SignUpPage = () => {
                 id="password"
                 className="border-[#EEEEEE] focus:outline-none focus:ring-0 focus:border-[#EEEEEE] mb-6 text-[15px] py-[15px] px-[30px]"
                 type="password"
+                value={password}
+                onChange={(e) => setPassword(e.target.value)}
+                required
+                autoComplete="off"
               />
             </div>
             <div className="flex flex-col relative">
               <label
                 className="font-semibold text-[12px] ml-6 bg-white -mt-[10px] absolute z-5"
-                htmlFor="password"
+                htmlFor="confirm"
               >
                 Confirm Password
               </label>
               <input
-                id="password"
+                id="confirm"
                 className="border-[#EEEEEE] focus:outline-none focus:ring-0 focus:border-[#EEEEEE] text-[15px] py-[15px] px-[30px]"
                 type="password"
+                value={confirmPassword}
+                onChange={(e) => setConfirmPassword(e.target.value)}
+                required
+                autoComplete="off"
               />
             </div>
-            <button className="block bg-[#7BAE00] hover:bg-[#0B2B3C] transition duration-300 text-white text-[15px] w-full py-[15px] my-5">
+            {error && (
+              <p className="text-red-500 text-[14px] mb-4 text-center">{error}</p>
+            )}
+            <button onClick={handleSubmit} className="block bg-[#7BAE00] hover:bg-[#0B2B3C] transition duration-300 text-white text-[15px] w-full py-[15px] my-5">
               REGISTER
             </button>
 
             <p className="text-[14px] text-[#333333] block text-center">
-              Already have account?{" "}
+              Already have an account?{" "}
               <Link className="text-[#0D6EFD]" href={"/SignIn"}>
                 Sign In
               </Link>
