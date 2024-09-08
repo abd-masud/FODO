@@ -1,7 +1,4 @@
-import { HomePage } from "@/components/HomePage/HomePage";
-import { Inter } from "next/font/google";
-
-const inter = Inter({ subsets: ["latin"] });
+import { HomePage } from "@/components/Fodo-Website/HomePage/HomePage";
 
 export default function Home() {
   return (
