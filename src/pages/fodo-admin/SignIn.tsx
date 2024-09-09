@@ -1,4 +1,4 @@
-import { SignInPage } from "@/components/Fodo-Website/SignInPage/SignInPage";
+import { SignInPage } from "@/components/Fodo-AdminPanel/SignInPage/SignInPage";
 
 export default function SignIn() {
   return (

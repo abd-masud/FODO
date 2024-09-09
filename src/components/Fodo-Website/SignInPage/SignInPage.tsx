@@ -91,19 +91,19 @@ export const SignInPage = () => {
             <button className="block bg-[#7BAE00] hover:bg-[#0B2B3C] transition duration-300 text-white text-[15px] w-full py-[15px] my-5">
               LOG IN
             </button>
-            <Link
-              className="text-[14px] text-[#333333] block text-center mb-1"
-              href={"/fodo-web/ForgetPassword"}
-            >
-              Forget Password
-            </Link>
-            <p className="text-[14px] text-[#333333] block text-center">
-              Don't have account?{" "}
-              <Link className="text-[#0D6EFD]" href={"/fodo-web/SignUp"}>
-                Sign Up
-              </Link>
-            </p>
           </form>
+          <Link
+            className="text-[14px] text-[#333333] block text-center mb-1"
+            href={"/fodo-web/ForgetPassword"}
+          >
+            Forget Password
+          </Link>
+          <p className="text-[14px] text-[#333333] block text-center">
+            Don't have account?{" "}
+            <Link className="text-[#0D6EFD]" href={"/fodo-web/SignUp"}>
+              Sign Up
+            </Link>
+          </p>
         </div>
       </div>
       <Footer />

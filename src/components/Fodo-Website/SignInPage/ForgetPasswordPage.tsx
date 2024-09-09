@@ -1,24 +1,12 @@
 import Link from "next/link";
 import { Footer } from "../Footer/Footer";
 import { Header } from "../Header/Header";
-import { faGoogle } from "@fortawesome/free-brands-svg-icons";
-import { faFacebookF } from "@fortawesome/free-brands-svg-icons";
-import { faTwitter } from "@fortawesome/free-brands-svg-icons";
-import dynamic from "next/dynamic";
-
-const FontAwesomeIcon = dynamic(
-  () =>
-    import("@fortawesome/react-fontawesome").then(
-      (module) => module.FontAwesomeIcon
-    ),
-  { ssr: false }
-);
 
 export const ForgetPasswordPage = () => {
   return (
     <main>
       <Header />
-      <div className="bg-[#F2F3F9] flex justify-center">
+      <div className="bg-[#0b0c16] flex justify-center">
         <div className="w-[450px] mx-10 my-12 bg-white flex flex-col items-center p-8">
           <h2 className="font-bold text-[#0B2B3C] text-[26px]">
             Forget Password

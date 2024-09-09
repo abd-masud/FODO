@@ -1,9 +1,9 @@
-import { SignIn } from "@/components/Fodo-AdminPanel/SignInPage/SignIn";
+import { HomePage } from "@/components/Fodo-AdminPanel/HomePage/HomePage";
 
-export default function Home() {
+export default function AdminHome() {
   return (
     <main>
-      <SignIn />
+      <HomePage />
     </main>
   );
 }
